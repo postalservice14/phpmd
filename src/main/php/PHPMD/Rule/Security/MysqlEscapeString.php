@@ -58,7 +58,8 @@ use PHPMD\Rule\MethodAware;
 class MysqlEscapeString extends AbstractRule implements MethodAware, FunctionAware
 {
     /**
-     * This method checks if a method/function uses a mysql_escape_string() function and add a violation for each one found.
+     * This method checks if a method/function uses a mysql_escape_string() function and adds
+     * a violation for each one found.
      *
      * @param \PHPMD\AbstractNode $node
      * @return void
