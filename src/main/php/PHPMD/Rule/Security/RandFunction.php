@@ -74,7 +74,11 @@ class RandFunction extends AbstractRule implements MethodAware, FunctionAware
         }
     }
 
-    private function isRandFunction($node)
+    /**
+     * @param AbstractNode $node
+     * @return bool
+     */
+    private function isRandFunction(AbstractNode $node)
     {
         return ($node->getName() === "rand");
     }

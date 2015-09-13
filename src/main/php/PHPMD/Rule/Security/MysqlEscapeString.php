@@ -74,7 +74,11 @@ class MysqlEscapeString extends AbstractRule implements MethodAware, FunctionAwa
         }
     }
 
-    private function isMysqlEscapeStringFunction($node)
+    /**
+     * @param AbstractNode $node
+     * @return bool
+     */
+    private function isMysqlEscapeStringFunction(AbstractNode $node)
     {
         return ($node->getName() === "mysql_escape_string");
     }
